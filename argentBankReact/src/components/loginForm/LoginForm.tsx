@@ -1,13 +1,15 @@
 
 
 import React, { useState } from 'react';
-// import { useDispatch } from 'react-redux';
-import {  } from '../../reducers/authSlice'; // action
-// import { useNavigate } from 'react-router-dom'; // pour la redirection
+import { useDispatch } from 'react-redux';
+import {  } from '../../reducers/auth/authSlice'; // action
+import { useNavigate } from 'react-router-dom'; // pour la redirection
 
 const LoginForm : React.FC = () => {
- // const dispatch = useDispatch();
- // const navigate = useNavigate();
+ 
+const dispatch = useDispatch();
+
+const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 

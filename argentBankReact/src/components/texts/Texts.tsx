@@ -1,7 +1,7 @@
 import React from 'react';
-import iconChat from '../img/icon-chat.webp';
-import iconMoney from '../img/icon-money.webp';
-import iconSecurity from '../img/icon-security.webp';
+import iconChat from '../../assets/img/icon-chat.png';
+import iconMoney from '../../assets/img/icon-money.png';
+import iconSecurity from '../../assets/img/icon-security.png';
 
 
 const Texts: React.FC = () => {

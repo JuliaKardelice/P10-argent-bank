@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; // Utilise localStorage par défaut
-import authReducer from '../reducers/authSlice';
+import authReducer from '../reducers/auth/authSlice'; // recupere les reduceur 
 
 // Configuration de redux-persist
 const persistConfig = {
@@ -13,6 +13,7 @@ const persistedAuthReducer = persistReducer(persistConfig, authReducer);
 const store = configureStore({
   reducer: {
     auth: persistedAuthReducer,
+    
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
