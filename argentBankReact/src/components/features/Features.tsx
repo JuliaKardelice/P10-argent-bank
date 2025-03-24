@@ -8,7 +8,7 @@ description : string;
 }
 
 
-export const Feature :React.FC<FeaturesProps> = ({ icon, title, description }) => {
+export const Features :React.FC<FeaturesProps> = ({ icon, title, description }) => {
   return (
     <section className=" featuresSection">
       <img src={icon} alt={title} />
@@ -18,4 +18,4 @@ export const Feature :React.FC<FeaturesProps> = ({ icon, title, description }) =
   );
 };
 
-export default Feature;
+export default Features;
