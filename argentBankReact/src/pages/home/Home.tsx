@@ -1,11 +1,15 @@
 import React from "react";
 
 import Texts from "../../components/texts/Texts";
+import Navigation from "../../components/navigation/Navigation";
 
 
 export const Home:React.FC = () => {
 
-return(
+
+  return(
+    <>
+    <Navigation/>
     <main>
       
     <div className="hero">
@@ -21,7 +25,7 @@ return(
     <Texts/>
      </section>
   </main>
-
+</>
 )
 
 
