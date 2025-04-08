@@ -5,9 +5,11 @@
 export interface AuthState {
     isAuthenticated : boolean,
     token : string,
-    status : 'idle' | 'loading' | 'succeeded' | 'failed',
+    loading : boolean,
     error : string,
-    infoUser : UserProfile
+    infoUser : UserProfile,
+    isEditingProfile : boolean
+
   }
   
 export interface UserProfile {
