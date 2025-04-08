@@ -1,28 +1,35 @@
 import React, { useState, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../store/store';
-import { cancelProfileEdit } from '../../reducers/auth/authSlice';
+import { AppDispatch } from '../../store/store';
 import { updateUserProfile } from '../../reducers/auth/authAction';
 import './EditUserInfo.scss';
+import { selectError, selectInfoUser, selectLoading } from '../../reducers/auth/authSelector';
+import { cancelProfileEdit } from '../../reducers/auth/authSlice';
+
 
 export const EditUserInfo: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();
   // We retrieve user profile, loading, and error states from Redux store
-  const { userProfile, loading, error } = useSelector(
-    (state: RootState) => state.auth
-  );
+
   // We set local state for user information fields
   const [userName, setUserName] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+
+  const error = useSelector(selectError);
+  const loading = useSelector(selectLoading);
+  const infoUser = useSelector(selectInfoUser);
+  
   // Effect to update local fields when userProfile changes
   useMemo(() => {
-    if (userProfile) {
-      setUserName(userProfile.userName || '');
-      setFirstName(userProfile.firstName || '');
-      setLastName(userProfile.lastName || '');
+    if (infoUser) {
+      setUserName(infoUser.userName || '');
+      setFirstName(infoUser.firstName || '');
+      setLastName(infoUser.lastName || '');
     }
-  }, [userProfile]);
+  }, [infoUser]);
+
+
   // We handle the save action to update the userName
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,9 +46,13 @@ export const EditUserInfo: React.FC = () => {
   const handleCancel = () => {
     dispatch(cancelProfileEdit());
   };
+
+
   // We display loading and error messages if necessary
   if (loading) return <p>Loading profile...</p>;
   if (error) return <p>Error loading profile: {error}</p>;
+
+  
   return (
     <form className="edit-user-info" onSubmit={handleSave}>
       <h1>Edit user info</h1>
