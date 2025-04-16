@@ -13,14 +13,14 @@ interface AccountData {
 
 // Déclaration des props attendues par le composant
 interface AccountProps {
-  accounts: AccountData[]; // Le composant reçoit un tableau de comptes
+  account: AccountData; // Le composant reçoit un tableau de comptes
 }
 
 
-const Account: React.FC<AccountProps> = ({ accounts }) => {
+const Account: React.FC<AccountProps> = ({ account }) => {
   return (
     <>
-      {accounts.map((account) => (
+
         <div key={account.id} className="account">
           <div className="account-content-wrapper">
             <h3 className="account-title">{account.title}</h3>
@@ -31,7 +31,7 @@ const Account: React.FC<AccountProps> = ({ accounts }) => {
             <button className="transaction-button">View transactions</button>
           </div>
         </div>
-      ))}
+      
     </>
   );
 };
