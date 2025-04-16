@@ -90,5 +90,5 @@ state.error = action.payload as string;
 );
 
 
-export const { logout, cancelProfileEdit } = authSlice.actions;
+export const { logout, cancelProfileEdit, startProfileEdit } = authSlice.actions;
 export default authSlice.reducer;
