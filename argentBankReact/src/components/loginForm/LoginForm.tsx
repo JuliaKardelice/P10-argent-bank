@@ -33,7 +33,7 @@ dispatch(loginUser({email,password,rememberMe}))
 useEffect(()=>{
 
 if (isAuthenticated) {
-navigate('/profil');
+navigate('/profile');
 }
 }, [isAuthenticated,navigate]);
 
