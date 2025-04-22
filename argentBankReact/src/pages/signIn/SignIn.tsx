@@ -10,7 +10,7 @@ export const SignIn: React.FC = () => {
 return(
 <div className='signIn-container'>
 <Navigation/>
-<main className='signIn-content'>
+<main className='signIn-content bg-dark '>
 <LoginForm/>
 </main>
 

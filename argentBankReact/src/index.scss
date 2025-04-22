@@ -4,6 +4,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+
   }
   
   body {
@@ -11,6 +12,7 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: inherit;
  
   }
  
@@ -69,6 +71,9 @@ html {
   .main-nav-item {
     text-decoration: none;
     margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
   }
   .main {
     flex: 1;
@@ -240,6 +245,10 @@ html {
     padding: 0;
   }
   
+  .account-header{
+    color: white;
+    font-size: 2rem;
+  }
   .account {
     display: flex;
     justify-content: space-between;
@@ -276,6 +285,9 @@ html {
     width: 100%;
     flex: 1;
   }
+
+
+  ///edit user
   
   .edit-button {
     border-color: #00bc77;
@@ -283,8 +295,12 @@ html {
     color: #fff;
     font-weight: bold;
     padding: 10px;
+    margin: 20px;
   }
   
+  .edit-user-info {
+  background-color: transparent;
+  }
   .header {
     color: #fff;
     margin-bottom: 2rem;
@@ -300,6 +316,14 @@ html {
     border-color: #00bc77;
     background-color: #00bc77;
     color: #fff;
+  }
+
+  //other element
+
+  .white-text{
+    font-size:20px;
+  color: white;
+  padding-top: 10px;
   }
   
   @media (min-width: 720px) {

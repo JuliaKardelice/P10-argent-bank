@@ -38,6 +38,7 @@ export const EditUserInfo: React.FC = () => {
       // unwrap() is used to directly get the result of the action (success or failure)
       await dispatch(updateUserProfile(userName)).unwrap();
       console.log('UserName updated successfully');
+      dispatch(cancelProfileEdit());
     } catch (error) {
       console.error('Error while updating user profile:', error);
     }

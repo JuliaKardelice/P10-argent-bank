@@ -29,7 +29,7 @@ const ProfileModif: React.FC<ProfileModifProps> = ({ firstName, userName }) => {
 
   return (
     <section>
-      <div className="header">
+      <div className="account-header white-text bg-dark">
         <h1>
           Welcome back
           <br />

@@ -21,7 +21,7 @@ const Account: React.FC<AccountProps> = ({ account }) => {
   return (
     <>
 
-        <div key={account.id} className="account">
+        <div key={account.id} className="account bg-dark">
           <div className="account-content-wrapper">
             <h3 className="account-title">{account.title}</h3>
             <p className="account-amount">{account.amount}</p>
