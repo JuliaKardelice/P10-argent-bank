@@ -16,65 +16,7 @@ html {
  
   }
  
-   
-    nav{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5px 20px;
-      flex: 1;
-    a{
-      font-weight: bold;
-      color: #2c3e50;  
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      .image 
-        {
-          max-width: 100%;
-          width: 200px;
-        }
-      }
-    }
-    
-  
 
-  .main-nav-item:hover {
-    text-decoration: underline;
-  }
-  
-  .main-nav-logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .main-nav-logo-image {
-    max-width: 100%;
-    width: 200px;
-  }
-  
-  .main-nav a {
-    font-weight: bold;
-    color: #2c3e50;
-  }
-  .main-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .main-nav a.router-link-exact-active {
-    color: #42b983;
-  }
-  
-  .main-nav-item {
-    text-decoration: none;
-    margin-right: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
-  }
   .main {
     flex: 1;
   }
@@ -232,59 +174,8 @@ html {
     padding: 5px;
     font-size: 1.2rem;
   }
+
   
-  .footer {
-    display: flex;
-    justify-content: center;
-    border-top: 2px solid #ccc;
-    padding: 2rem 0 1.5rem;
-  }
-  
-  .footer-text {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .account-header{
-    color: white;
-    font-size: 2rem;
-  }
-  .account {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    background-color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    flex-direction: column;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    text-align: left;
-    margin-bottom: 2rem;
-  }
-  
-  .account-amount {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .account-amount-description {
-    margin: 0;
-  }
-  
-  .account-title {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: normal;
-  }
-  
-  .account-content-wrapper {
-    width: 100%;
-    flex: 1;
-  }
 
 
   ///edit user
@@ -298,25 +189,12 @@ html {
     margin: 20px;
   }
   
-  .edit-user-info {
-  background-color: transparent;
-  }
+
   .header {
     color: #fff;
     margin-bottom: 2rem;
   }
   
-  .transaction-button {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    border-color: #00bc77;
-    background-color: #00bc77;
-    color: #fff;
-  }
 
   //other element
 

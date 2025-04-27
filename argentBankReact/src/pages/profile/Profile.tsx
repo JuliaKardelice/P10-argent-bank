@@ -8,6 +8,7 @@ import { fetchUserProfile } from "../../reducers/auth/authAction";
 import { EditUserInfo } from "../../components/userEditForm/EditUserInfo";
 import ProfileModif from "../../components/profilModif/ProfilModif";
 import Account from "../../components/account/Account";
+import "./Profile.scss"
 // import {Account} from "../../components/account/Account";
 
 const accountsData = [
@@ -67,14 +68,15 @@ const isEditingProfile = useSelector(selectIsEditingProfile);
 return (
 <>
 <Navigation/>
+
+
+<main className="bg-dark main ">
 {isEditingProfile ? (
           <EditUserInfo />
         ) : (
           <ProfileModif userName={userName} firstName={firstName} />
         )}
-
-<main className="bg-dark main ">
-<section>
+<section className="transactions-container">
         <h2 className="sr-only">Accounts</h2>
         {accountsData.map((accountData) => (
             <Account account={accountData} key={accountData.title} />

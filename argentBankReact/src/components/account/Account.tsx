@@ -1,6 +1,7 @@
+
+
 import React from 'react';
-
-
+import "./Account.scss"
 
 // Définition de l'interface d'un compte
 interface AccountData {
@@ -15,6 +16,7 @@ interface AccountData {
 interface AccountProps {
   account: AccountData; // Le composant reçoit un tableau de comptes
 }
+
 
 
 const Account: React.FC<AccountProps> = ({ account }) => {

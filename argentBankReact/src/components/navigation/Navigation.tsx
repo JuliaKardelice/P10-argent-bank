@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../store/store';
 import { logout } from '../../reducers/auth/authSlice';
+import "./Navigation.scss"
+
 
 const Navigation: React.FC = () => {
 const dispatch : AppDispatch = useDispatch(); /// App dispatch propre à ts

@@ -8,15 +8,16 @@ import LoginForm from '../../components/loginForm/LoginForm';
 export const SignIn: React.FC = () => {
  
 return(
+<>
 <div className='signIn-container'>
 <Navigation/>
-<main className='signIn-content bg-dark '>
+<main className='signIn-content bg-dark padding'>
 <LoginForm/>
 </main>
 
 </div>
 
-
+</>
 )
 }
 

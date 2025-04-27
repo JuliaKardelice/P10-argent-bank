@@ -9,6 +9,9 @@
     background-color: #00bc77;
     color: #fff;
 }
+.padding {
+  padding: 40px;
+}
 
 .sign-in-content {
     box-sizing: border-box;
@@ -16,7 +19,7 @@
     width: 300px;
     margin: 0 auto;
     margin-top: 3rem;
-    padding: 2rem;
+
   }
   
   .sign-in-icon {
@@ -46,3 +49,4 @@
     padding: 5px;
     font-size: 1.2rem;
   }
+

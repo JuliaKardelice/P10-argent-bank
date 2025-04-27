@@ -1,0 +1,25 @@
+/* footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding: 0.5rem 0;
+    background-color: #f9f9f9; // tu peux adapter
+    font-size: 0.8rem;
+    color: #666;
+    flex-shrink: 0;
+  } */
+
+    
+ .footer {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #ccc;
+    padding: 2rem 0 1.5rem;
+  }
+    
+  
+  .footer-text {
+    margin: 0;
+    padding: 0;
+  }
